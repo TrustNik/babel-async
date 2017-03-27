@@ -1,0 +1,19 @@
+{
+  "name": "babel-async",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TrustNik/babel-async.git",
+  "author": "Vadim Sloockiy <2trustnik@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "babel-cli" : "babel ./src/index.js --out-file ./build/cli-out.js",
+    "webpack-cli" : "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "webpack": "1.14.0"
+  }
+}
