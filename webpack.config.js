@@ -9,15 +9,12 @@ module.exports = {
         path: path.join(__dirname, './build/'),
         filename: 'webpack-out.js'
     },
-    resolve: {
-        extensions: ['', '.js']
-    },
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loaders: ['babel']
+                loader: 'babel-loader'
             }
         ]
     }
